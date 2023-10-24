@@ -1,0 +1,32 @@
+#language-button{
+    left: 120px; top: -380px;
+}
+#oop-button {
+    left: 350px; top: -320px;
+}
+
+#copyright-button {
+    left: 100px; top: -200px;
+}
+.tree-img {
+    width: 552px;
+    position: relative;
+}
+
+@media (min-width: 900px) and (min-height: 900px) {
+    #language-button{
+        left: 196px; top: -520px;
+    }
+    #oop-button {
+        left: 571px; top: -522px;
+    }
+    
+    #copyright-button {
+        left: 163px; top: -306px;
+    }
+    .tree-img {
+        width: 900px;
+        position: relative;
+    }
+
+}
