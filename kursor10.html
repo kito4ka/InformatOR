@@ -52,11 +52,19 @@ $.when(
           $.get('subjects/kursor10/subject15.html', function(data) {
               $("#main-accordion").append(data);
           }),
+          $.get('subjects/kursor10/subject16.html', function(data) {
+              $("#main-accordion").append(data);
+          }),
           $.Deferred(function(deferred) {
               $(deferred.resolve);
           })
       ).always(function() {
-      $( "#main-accordion" ).accordion();
+      $( "#main-accordion" ).accordion(
+            {
+              heightStyle: "content",
+              collapsible: true
+            }
+          );
       });
     } );
     

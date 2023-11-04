@@ -17,7 +17,12 @@
               $(deferred.resolve);
           })
       ).done(function() {
-          $( "#main-accordion" ).accordion();
+          $( "#main-accordion" ).accordion(
+            {
+              heightStyle: "content",
+              collapsible: true
+            }
+          );
       });
     } );
     
