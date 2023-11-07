@@ -143,3 +143,33 @@ html {
 .list-item:hover {
     background-color:#1394C5 ;
 }
+.theme-item {
+    display: block;
+    text-align: center;    
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    background-color: white;
+    padding: 5px 5px 5px 5px;
+    margin: 5px 5px 5px 5px;
+    font-size: larger;
+    font-weight: bolder;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.theme-item:hover {
+    background-color:#d3f7ff ;
+}
+
+.regular-links {
+    display: block;
+    font-weight: bolder;
+    text-align: center;    
+    color: rgb(0, 0, 0);
+    background-color: white;
+    padding: 5px 5px 5px 5px;
+    margin: 5px 5px 5px 5px;
+    font-size: larger;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.regular-links:hover {
+    background-color:#d3f7ff ;
+}
