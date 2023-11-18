@@ -1,0 +1,86 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="../styles/global.css"/>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script>
+    $( function() {
+$.when(
+          $.get('subjects/subject01.html', function(data) {
+              $("#main-accordion").append(data);
+          }),
+          $.get('subjects/subject02.html', function(data) {
+              $("#main-accordion").append(data);
+          }),
+          $.get('subjects/subject03.html', function(data) {
+              $("#main-accordion").append(data);
+          }),
+          $.get('subjects/subject04.html', function(data) {
+              $("#main-accordion").append(data);
+          }),
+          $.get('subjects/subject05.html', function(data) {
+              $("#main-accordion").append(data);
+          }),
+          $.get('subjects/subject06.html', function(data) {
+              $("#main-accordion").append(data);
+          }),
+          $.get('subjects/subject07.html', function(data) {
+              $("#main-accordion").append(data);
+          }),
+          $.get('subjects/subject08.html', function(data) {
+              $("#main-accordion").append(data);
+          }),
+          $.get('subjects/subject09.html', function(data) {
+              $("#main-accordion").append(data);
+          }),
+          $.get('subjects/subject10.html', function(data) {
+              $("#main-accordion").append(data);
+          }),
+          $.get('subjects/subject11.html', function(data) {
+              $("#main-accordion").append(data);
+          }),
+          $.get('subjects/subject12.html', function(data) {
+              $("#main-accordion").append(data);
+          }),
+          $.get('subjects/subject13.html', function(data) {
+              $("#main-accordion").append(data);
+          }),
+          $.get('subjects/subject14.html', function(data) {
+              $("#main-accordion").append(data);
+          }),
+          $.get('subjects/subject15.html', function(data) {
+              $("#main-accordion").append(data);
+          }),
+          $.get('subjects/subject16.html', function(data) {
+              $("#main-accordion").append(data);
+          }),
+          $.Deferred(function(deferred) {
+              $(deferred.resolve);
+          })
+      ).always(function() {
+        $( "#main-accordion" ).accordion(
+                {
+                  heightStyle: "content",
+                  collapsible: true,
+                  active: false
+                }
+            );
+        }
+      );
+    } );
+    
+    </script>
+  </head>
+  <body>
+    <span class="content">
+      <span class="title">
+          <h1>КурсОР 10</h1>
+      </span>
+      
+      <div id="main-accordion">
+          
+      </div>
+    </span>
+  </body>
+</html>
