@@ -60,6 +60,13 @@ html {
     height: 100%;
 }
 
+video {
+    left: 10%;
+    right: 10%;
+    width: 80%;
+    position: relative;
+}
+
 .button .tooltiptext {
     box-shadow: #1394C5 2px 2px 2px;
     visibility: hidden;
@@ -154,12 +161,14 @@ html {
     margin: 10px 10px 10px 10px;
     padding: 10px 10px 30px 10px;
     height: 500px;
+    min-height: 1400px;
 }
 
 .auto-fit-img {
     height: 100%; 
     width: 100%; 
-    object-fit: contain
+    object-fit: contain;
+    max-height: 600px;
 }
 
 .list-item {
