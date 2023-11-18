@@ -119,15 +119,15 @@ video {
     border: lightgray;
     border-width: 1px;
     border-style: solid;
+    text-decoration: none;
+    border-radius: 3px;
+    position: relative;
+    
   
     display: block;
-    left: 10%;
-    right: 10%;
-    width: 80%;
-    position: relative;
-    margin: 2px 0px 0px 0px;
-    padding: 10px 0px 10px 0px;
-    color:aliceblue;
+    margin: 2px 2px 2px 2px;
+    padding: 10px 10px 10px 10px;
+    color: aliceblue;
     letter-spacing: 1px; 
     text-shadow: rgb(0, 0, 0) 1px 1px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -146,6 +146,7 @@ video {
     width: 80%;
     position: relative;
     background-color: aliceblue;
+    padding: 5px;
 }
 
 #main-accordion h3{
