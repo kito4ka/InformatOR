@@ -5,69 +5,44 @@
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
     <script>
-    $( function() {
-$.when(
-          $.get('subjects/subject01.html', function(data) {
+      function loadSubject(url) {
+        var dfd = $.Deferred();
+        $.get(url, function(data) {
               $("#main-accordion").append(data);
-          }),
-          $.get('subjects/subject02.html', function(data) {
-              $("#main-accordion").append(data);
-          }),
-          $.get('subjects/subject03.html', function(data) {
-              $("#main-accordion").append(data);
-          }),
-          $.get('subjects/subject04.html', function(data) {
-              $("#main-accordion").append(data);
-          }),
-          $.get('subjects/subject05.html', function(data) {
-              $("#main-accordion").append(data);
-          }),
-          $.get('subjects/subject06.html', function(data) {
-              $("#main-accordion").append(data);
-          }),
-          $.get('subjects/subject07.html', function(data) {
-              $("#main-accordion").append(data);
-          }),
-          $.get('subjects/subject08.html', function(data) {
-              $("#main-accordion").append(data);
-          }),
-          $.get('subjects/subject09.html', function(data) {
-              $("#main-accordion").append(data);
-          }),
-          $.get('subjects/subject10.html', function(data) {
-              $("#main-accordion").append(data);
-          }),
-          $.get('subjects/subject11.html', function(data) {
-              $("#main-accordion").append(data);
-          }),
-          $.get('subjects/subject12.html', function(data) {
-              $("#main-accordion").append(data);
-          }),
-          $.get('subjects/subject13.html', function(data) {
-              $("#main-accordion").append(data);
-          }),
-          $.get('subjects/subject14.html', function(data) {
-              $("#main-accordion").append(data);
-          }),
-          $.get('subjects/subject15.html', function(data) {
-              $("#main-accordion").append(data);
-          }),
-          $.get('subjects/subject16.html', function(data) {
-              $("#main-accordion").append(data);
-          }),
-          $.Deferred(function(deferred) {
-              $(deferred.resolve);
-          })
-      ).always(function() {
-        $( "#main-accordion" ).accordion(
-                {
-                  heightStyle: "content",
-                  collapsible: true,
-                  active: false
-                }
-            );
-        }
-      );
+              dfd.resolve('done');
+          });
+        return dfd.promise();
+      }
+      
+      $( function() {
+        $("#main-accordion").hide();
+        loadSubject('subjects/subject01.html')
+        .then(script => loadSubject('subjects/subject02.html'))
+        .then(script => loadSubject('subjects/subject03.html'))
+        .then(script => loadSubject('subjects/subject04.html'))
+        .then(script => loadSubject('subjects/subject05.html'))
+        .then(script => loadSubject('subjects/subject06.html'))
+        .then(script => loadSubject('subjects/subject07.html'))
+        .then(script => loadSubject('subjects/subject08.html'))
+        .then(script => loadSubject('subjects/subject09.html'))
+        .then(script => loadSubject('subjects/subject10.html'))
+        .then(script => loadSubject('subjects/subject11.html'))
+        .then(script => loadSubject('subjects/subject12.html'))
+        .then(script => loadSubject('subjects/subject13.html'))
+        .then(script => loadSubject('subjects/subject14.html'))
+        .then(script => loadSubject('subjects/subject15.html'))
+        .then(script => loadSubject('subjects/subject16.html'))
+        .then(function() {
+          $("#main-accordion").show()
+          $( "#main-accordion" ).accordion(
+                  {
+                    heightStyle: "content",
+                    collapsible: true,
+                    active: false
+                  }
+              );
+          }
+        );
     } );
     
     </script>
