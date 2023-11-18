@@ -5,7 +5,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
     <script>
-    function loadSubject(url) {
+      function loadSubject(url) {
         var dfd = $.Deferred();
         $.get(url, function(data) {
               $("#main-accordion").append(data);
@@ -35,6 +35,7 @@
               );
           }
         );
+      });
     
     </script>
   </head>
@@ -47,6 +48,7 @@
       <div id="main-accordion">
           
       </div>
+      <a class = "back-button" onclick="history.back()">Go Back</a>
     </span>
   </body>
 </html>
