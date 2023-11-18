@@ -116,20 +116,28 @@ video {
 }
 
 .back-button{
+    border: lightgray;
+    border-width: 1px;
+    border-style: solid;
+  
     display: block;
     left: 10%;
     right: 10%;
     width: 80%;
     position: relative;
-    margin: 2px;
+    margin: 2px 0px 0px 0px;
     padding: 10px 0px 10px 0px;
     color:aliceblue;
-    letter-spacing: 1px;
+    letter-spacing: 1px; 
     text-shadow: rgb(0, 0, 0) 1px 1px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size:larger;
     font-weight:bold;
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(255,255,255,1) 0%, rgba(4, 201, 241, 0.74) 50%, rgba(255,255,255,1) 100%);
+}
+
+.back-button:hover {
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgb(188, 224, 231) 0%, rgba(0,212,255,1) 50%, rgb(188, 224, 231) 100%);
 }
 
 #main-accordion {
