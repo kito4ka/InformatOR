@@ -24,9 +24,9 @@ ul {
 }
 
 .title {
-    text-shadow: rgb(0, 0, 0) 1px 0 2px;
+    text-shadow: #f6c7ac 1px 0px 7px;
     text-align: center;    
-    color: aliceblue;
+    color: #853e19;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .tree-content {
@@ -46,11 +46,12 @@ ul {
 .button-img {
     height: 150px;
     position: relative;
+    filter: hue-rotate(185deg);
 }
 
 body {
     background-attachment: fixed;
-    background-image: linear-gradient(0deg,rgba(255,255,255,1) 0%, rgb(73, 240, 255) 100%);
+    background-image: linear-gradient(0deg,#d99085 0%,#f6c7ac 100%);
     width: 100%;
     height: 100%;
 }
@@ -68,11 +69,11 @@ video {
 }
 
 .button .tooltiptext {
-    box-shadow: #1394C5 2px 2px 2px;
+    box-shadow: #9e6462 2px 2px 2px;
     visibility: hidden;
     /* width: 120px; */
-    background-color: #4CF0FF;
-    color: #1394C5;
+    background-color: #f6c7ac;
+    color: #9e6462;
     text-align: center;
     font-family: 
         'Lucida Sans', 
@@ -108,7 +109,7 @@ video {
     margin-top: -5px;
     border-width: 5px;
     border-style: solid;
-    border-color: transparent #4CF0FF transparent transparent;
+    border-color: transparent #f6c7ac transparent transparent;
   }
 
 #copyright-button {
@@ -127,17 +128,17 @@ video {
     display: block;
     margin: 2px 2px 2px 2px;
     padding: 10px 10px 10px 10px;
-    color: aliceblue;
+    color: #853e19;
     letter-spacing: 1px; 
-    text-shadow: rgb(0, 0, 0) 1px 1px;
+    text-shadow: #f6c7ac 1px 1px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size:larger;
     font-weight:bold;
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(255,255,255,1) 0%, rgba(4, 201, 241, 0.74) 50%, rgba(255,255,255,1) 100%);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, #d99085 0%, #f6c7ac 50%, #d99085 100%);
 }
 
 .back-button:hover {
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgb(188, 224, 231) 0%, rgba(0,212,255,1) 50%, rgb(188, 224, 231) 100%);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, #9e6462 0%, #d99085 50%, #9e6462 100%);
 }
 
 #main-accordion {
@@ -145,23 +146,24 @@ video {
     right: 10%;
     width: 80%;
     position: relative;
-    background-color: aliceblue;
+    background-color: #f6c7ac;
     padding: 5px;
 }
 
 #main-accordion h3{
     margin: 2px;
-    color:aliceblue;
+    color:#853e19;
     letter-spacing: 1px;
-    text-shadow: rgb(0, 0, 0) 1px 1px;
+    text-shadow: #f6c7ac 1px 1px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     padding: 10px;
     font-size:larger;
     font-weight:bold;
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(255,255,255,1) 0%, rgba(4, 201, 241, 0.74) 50%, rgba(255,255,255,1) 100%);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, #d99085 0%, #f6c7ac 50%, #d99085 100%);
 }
+
 #main-accordion h3:hover {
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgb(188, 224, 231) 0%, rgba(0,212,255,1) 50%, rgb(188, 224, 231) 100%);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, #9e6462 0%, #d99085 50%, #9e6462 100%);
 }
 
 .section-content {
@@ -184,14 +186,15 @@ video {
     display: block;
     text-align: center;    
     text-decoration: none;
-    color: white !important;
-    background-color: rgba(0,212,255,1);
+    color: #9e6462 !important;
+    background-color:#f6c7ac;
     padding: 5px 5px 5px 5px;
     margin: 5px 5px 5px 5px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .list-item:hover {
-    background-color:#1394C5 ;
+    background-color:#d99085;
+    color: white !important;
 }
 .theme-item {
     display: block;
@@ -206,7 +209,7 @@ video {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .theme-item:hover {
-    background-color:#d3f7ff ;
+    background-color:#f6c7ac;
 }
 
 .regular-links {
@@ -221,5 +224,5 @@ video {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .regular-links:hover {
-    background-color:#d3f7ff ;
+    background-color:#f6c7ac ;
 }
