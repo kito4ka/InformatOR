@@ -24,9 +24,9 @@ ul {
 }
 
 .title {
-    text-shadow: #f6c7ac 1px 0px 7px;
+    text-shadow:#B8AAFF 1px 0px 7px;
     text-align: center;    
-    color: #853e19;
+    color: white;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .tree-content {
@@ -46,12 +46,12 @@ ul {
 .button-img {
     height: 150px;
     position: relative;
-    filter: hue-rotate(185deg);
+    filter: hue-rotate(69deg);
 }
 
 body {
     background-attachment: fixed;
-    background-image: linear-gradient(0deg,#d99085 0%,#f6c7ac 100%);
+    background-image: linear-gradient(0deg,#D5A9FC 0%,#B8AAFF  100%);
     width: 100%;
     height: 100%;
 }
@@ -69,11 +69,11 @@ video {
 }
 
 .button .tooltiptext {
-    box-shadow: #9e6462 2px 2px 2px;
+    box-shadow:#D5A9FC 2px 2px 2px;
     visibility: hidden;
     /* width: 120px; */
-    background-color: #f6c7ac;
-    color: #9e6462;
+    background-color: #E9D0FF;
+    color:#4E1173;
     text-align: center;
     font-family: 
         'Lucida Sans', 
@@ -109,7 +109,7 @@ video {
     margin-top: -5px;
     border-width: 5px;
     border-style: solid;
-    border-color: transparent #f6c7ac transparent transparent;
+    border-color: transparent #E9D0FF transparent transparent;
   }
 
 #copyright-button {
@@ -128,17 +128,17 @@ video {
     display: block;
     margin: 2px 2px 2px 2px;
     padding: 10px 10px 10px 10px;
-    color: #853e19;
+    color:aliceblue;
     letter-spacing: 1px; 
-    text-shadow: #f6c7ac 1px 1px;
+    text-shadow: #4E1173 1px 1px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size:larger;
     font-weight:bold;
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, #d99085 0%, #f6c7ac 50%, #d99085 100%);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, #DBA1FE 0%, #E4ABF5 50%,#DBA1FE 100%);
 }
 
 .back-button:hover {
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, #9e6462 0%, #d99085 50%, #9e6462 100%);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, #C464FF 0%, #E4ABF5 50%,#C464FF  100%);
 }
 
 #main-accordion {
@@ -146,24 +146,24 @@ video {
     right: 10%;
     width: 80%;
     position: relative;
-    background-color: #f6c7ac;
+    background-color:aliceblue;
     padding: 5px;
 }
 
 #main-accordion h3{
     margin: 2px;
-    color:#853e19;
+    color:aliceblue;
     letter-spacing: 1px;
-    text-shadow: #f6c7ac 1px 1px;
+    text-shadow:#4E1173  1px 1px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     padding: 10px;
     font-size:larger;
     font-weight:bold;
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, #d99085 0%, #f6c7ac 50%, #d99085 100%);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%,#DBA1FE 0%, #E4ABF5 50%,#DBA1FE 100%);
 }
 
 #main-accordion h3:hover {
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, #9e6462 0%, #d99085 50%, #9e6462 100%);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, #C464FF 0%,#E4ABF5  50%,#C464FF  100%);
 }
 
 .section-content {
@@ -186,14 +186,14 @@ video {
     display: block;
     text-align: center;    
     text-decoration: none;
-    color: #9e6462 !important;
-    background-color:#f6c7ac;
+    color:white !important;
+    background-color:#BE80FF;
     padding: 5px 5px 5px 5px;
     margin: 5px 5px 5px 5px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .list-item:hover {
-    background-color:#d99085;
+    background-color:#874DC3;
     color: white !important;
 }
 .theme-item {
@@ -209,7 +209,7 @@ video {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .theme-item:hover {
-    background-color:#f6c7ac;
+    background-color:#DFC2FF;
 }
 
 .regular-links {
@@ -224,5 +224,5 @@ video {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .regular-links:hover {
-    background-color:#f6c7ac ;
+    background-color:#DFC2FF ;
 }
