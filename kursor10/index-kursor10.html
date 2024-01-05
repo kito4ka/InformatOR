@@ -5,6 +5,44 @@
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
     <script>
+      var entityMap = {
+        '&': '&amp;',
+        '<': '&lt;',
+        '>': '&gt;',
+        '"': '&quot;',
+        "'": '&#39;',
+        '/': '&#x2F;',
+        '`': '&#x60;',
+        '=': '&#x3D;'
+      };
+      
+      jQuery.expr[':'].icontains = function(a, i, m) {
+       return jQuery(a).text().toUpperCase()
+       .indexOf(m[3].toUpperCase()) >= 0;
+      };
+
+      function escapeHtml (string) {
+        return String(string).replace(/[&<>"'`=\/]/g, function (s) {
+          return entityMap[s];
+        });
+      }
+      
+      function hideBlocks(event) {
+        $("#main-accordion")
+          .accordion("option","active", -1)
+        $("#main-accordion")
+          .accordion()
+          .children('div:icontains("'+escapeHtml(event.target.value)+'")')
+          .prev()
+          .show()
+        $("#main-accordion")
+          .accordion()
+          .children(':not(div:icontains("'+escapeHtml(event.target.value)+'"))')
+          .prev()
+          .hide()
+      
+      }
+      
       function loadSubject(url) {
         var dfd = $.Deferred();
         $.get(url, function(data) {
@@ -32,6 +70,7 @@
         .then(script => loadSubject('subjects/subject14.html'))
         .then(script => loadSubject('subjects/subject15.html'))
         .then(script => loadSubject('subjects/subject16.html'))
+        .then(script => loadSubject('subjects/subject17.html'))
         .then(function() {
           $("#main-accordion").show()
           $( "#main-accordion" ).accordion(
@@ -46,6 +85,8 @@
           
           
         );
+        
+        $( "#search" ).on( "input", hideBlocks);
     } );
     
     </script>
@@ -55,7 +96,12 @@
       <span class="title">
           <h1>ИнформатОР 10</h1>
       </span>
-      
+
+      <div id="search">
+        <input name="search-input" placeholder="Поиск..." id="search-input" type="search"/>
+        <label for="search-input" id="search-img"/>
+      </div>
+
       <div id="main-accordion">
           
       </div>
