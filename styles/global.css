@@ -240,7 +240,7 @@ video {
     width: 20px;
     display: inline-block;
     margin: 0px 1px 0px 1px;
-    background-image: url("/images/Search.svg");
+    background-image: url("../images/Search.svg");
     background-size: contain;
     background-repeat: no-repeat;
 }
