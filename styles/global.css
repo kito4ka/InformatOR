@@ -32,7 +32,7 @@ ul {
 .tree-content {
     width: 100%;
     top: 5%;
-    position: absolute
+    position:relative
 }
 
 .tree {
@@ -250,4 +250,18 @@ video {
     display: inline-block;
     margin: 0px 1px 0px 1px;
     padding: 0px;
+}
+
+.feedback-content{
+  position: relative;
+  
+}
+
+.feedback, .feedback:visited {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  position: absolute;
+  right: 0px;
+  padding-right: 20px;
+  text-decoration: none;
+  color: aliceblue;
 }
