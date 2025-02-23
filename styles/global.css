@@ -261,14 +261,13 @@ video {
     
   }
 
-  .google-class-link, .google-class-link:visited {
+.google-class-link, .google-class-link:visited {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     position: absolute;
     right: 10px;
-    padding-top:430px;
     text-decoration: none;
     color: aliceblue;
-  }
+}
   
 
 .feedback, .feedback:visited {
