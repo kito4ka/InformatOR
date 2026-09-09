@@ -61,10 +61,12 @@ html {
     height: 100%;
 }
 
-video {
+.video {
+	display: block;
     left: 10%;
     right: 10%;
     width: 80%;
+	height: 500px;
     position: relative;
 }
 
